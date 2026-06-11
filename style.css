@@ -1,14 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Fonte e cores principais */
+body {
+    font-family: "Poppins", Roboto, Georgia, 'Times New Roman', Times, serif;
+    background-color: #f7fffb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+#topo {
+    background-color: #f8c6d0;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #4a2c2a;
+}
+
+.menu-principal {
+    margin-top: 10px;
+}
+
+.menu-principal a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4a2c2a;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu-principal a:hover {
+    color: #fff;
+}
+
+/* Hero */
+.slogan {
+    text-align: center;
+    margin: 40px 20px;
+    font-size: 1.8rem;
+    color: #4a2c2a;
+}
+
+/* Seções */
+.secao {
+    padding: 40px 20px;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    color: #4a2c2a;
+}
+
+.descricao-secao {
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+/* Produtos */
+#produtos {
+    background-color: #fff0f5;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.produto h4 {
+    margin: 15px 0 10px;
+    color: #4a2c2a;
+}
+
+.produto p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+#contato {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Formulário de contato */
+.form-contato {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
 
 }
-body {
-    font-family: 'Questrial', Georgia, 'Times New Roman', Times, serif;
-    background-color: #d3fcff;
+
+.form-contato label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #4a2c2a;
 }
-.imagens img{
-    width: 250px;
-    height: 350px;
-    object-fit: cover;
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form-contato textarea {
+    min-height: 100px;
+}
+
+.btn-enviar {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #f8c6d0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #e89bb0;
+}
+
+/* Rodapé */
+#rodape {
+    background-color: #f8c6d0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#rodape h4 {
+    color: #4a2c2a;
+    margin-bottom: 5px;
+}
+
+#rodape p {
+    color: #4a2c2a;
+    font-size: 0.9rem;
 }

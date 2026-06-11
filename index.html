@@ -9,30 +9,75 @@
 </head>
 
 <body>
-    <header>
-        <h1>Flor & Afeto</h1>
-        <nav>
-            <a href="">Início</a>
-            <a href="">Sobre</a>
-            <a href="">Produtos</a>
-            <a href="">Unidades</a>
+    <!-- Cabeçalho -->
+    <header id="topo">
+        <h1 class="logo">Flor & Afeto</h1>
+        <nav class="menu-principal">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#produtos">Produtos</a>
         </nav>
     </header>
-    <main>
-        <h2>Flores que transformam momentos em memórias.</h2>
-        <div class="imagens">
-            <img src="images/cesta-flor.jpg" alt="">
-            <img src="images/lírios.jpg" alt="">
-            <img src="images/vaso de flor.jpg" alt="">
-        </div>
+
+    <!-- Hero -->
+    <main id="inicio">
+        <h2 class="slogan">Flores que transformam momentos em memórias inesquecíveis.</h2>
+
+        <!-- Produtos -->
+        <section id="produtos" class="secao">
+            <h3 class="titulo-secao">Nossos Produtos</h3>
+            <p class="descricao-secao">Cada arranjo é pensado com carinho para transmitir emoções e tornar ocasiões especiais ainda mais marcantes.</p>
+            
+            <div class="produtos-grid">
+                <div class="produto">
+                    <img src="assets/vaso de flor.jpg" alt="Buquê de flores coloridas">
+                    <h4>Buquê de Flores</h4>
+                    <p>Um clássico que nunca sai de moda. Ideal para presentear em aniversários, celebrações românticas ou simplesmente para surpreender alguém querido.</p>
+                </div>
+                <div class="produto">
+                    <img src="assets/cesta-flor.jpg" alt="Cesta de flores variadas">
+                    <h4>Cesta de Flores</h4>
+                    <p>Combinação sofisticada de flores frescas em uma cesta elegante. Perfeita para decorar ambientes e transmitir delicadeza e bom gosto.</p>
+                </div>
+                <div class="produto">
+                    <img src="assets/lírios.jpg" alt="Arranjo de lírios brancos">
+                    <h4>Arranjo de Lírios</h4>
+                    <p>Os lírios simbolizam pureza e renovação. Este arranjo é ideal para trazer leveza e alegria a qualquer espaço.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section id="sobre" class="secao">
+            <h3 class="titulo-secao">Sobre Nós</h3>
+            <p class="descricao-secao">Na Flor & Afeto, acreditamos que cada flor carrega uma mensagem única. Nossa missão é transformar sentimentos em arranjos que encantam e emocionam. Com anos de experiência, oferecemos qualidade, frescor e dedicação em cada detalhe.</p>
+        </section>
     </main>
 
+    <!-- Contato -->
+    <section id="contato" class="secao">
+        <h3 class="titulo-secao">Entre em Contato</h3>
+        <p class="descricao-secao">Queremos ouvir você! Preencha o formulário abaixo e nossa equipe retornará o mais rápido possível.</p>
+        
+        <form class="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
-    <footer>
-        <h4>Flor & Afeto</h4>
-        <p>Flores que transformam momentos em memórias.</p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="rodape">
+        <h4 class="logo">Flor & Afeto</h4>
+        <p>Flores que transformam momentos em memórias inesquecíveis. © 2026 - Todos os direitos reservados.</p>
     </footer>
 
 </body>
-
 </html>
