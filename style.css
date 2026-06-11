@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+*{
+    margin: 0;
+
+}
+body {
+    font-family: 'Questrial', Georgia, 'Times New Roman', Times, serif;
+    background-color: #d3fcff;
+}
+.imagens img{
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
